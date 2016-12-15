@@ -1,0 +1,142 @@
+body {
+  background-color: $white;
+  color: $black;
+  font-family: $font;
+  font-size: 16px;
+}
+
+// Header and Navigation area 
+.site-header {
+  margin: 3em 0;
+}
+
+.site-title {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+  a{
+    color: $black; 
+    text-decoration: none; 
+    &:hover, &:focus{
+      text-decoration: none;
+    }
+  }
+}
+
+// Navigation 
+.intro-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-y: hidden;
+  transition: background-color .5s ease;
+  visibility: hidden;
+}
+
+.intro-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+  .intro-copy {
+  font-size: 1.5em;
+  line-height: 1.9em;
+  padding: 20px 50px;
+  display: block;
+  vertical-align: middle;
+  }
+
+.contact-details a {
+  color: $black; 
+  text-decoration: underline;
+  -moz-text-decoration-color: red; 
+  text-decoration-color: red;
+  font-size: 1.125em;
+  &:hover, &:focus{
+   text-decoration: none; 
+  }
+}
+
+/* Navigation icon */
+.nav-icon {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  padding: 10px;
+  z-index: 2;
+  z-index: 2;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+.nav-icon span,
+.nav-icon span:before,
+.nav-icon span:after {
+  cursor: pointer;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background: #1e1e1e;
+  display: block;
+  content: '';
+  transition: all .25s ease-out;
+}
+
+.nav-icon span:before {
+  top: -9px;
+}
+
+.nav-icon span:after {
+  bottom: -9px;
+}
+
+.active {
+  &.intro-overlay {
+    visibility: visible;
+    background: $primary-color;
+    opacity: 1;
+  }
+  &.nav-icon {
+    span {
+      background-color: transparent;
+      &:before {
+        transform: rotate(145deg);
+        top: 0;
+      }
+      &:after {
+        transform: rotate(-145deg);
+        top: 0;
+      }
+    }
+  }
+}
+
+// Content 
+.main-container {
+  margin: 0 auto;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 90%;
+  margin: 0 auto 1.5em;
+  img {
+    width: 100%;
+  }
+}
+
