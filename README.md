@@ -5,8 +5,8 @@ On my 24th birthday I wrote a list of 25 things I wanted to do before I turned 2
 to take use a single use camera every month until my 25th birthday. I didn't originally plan to showcase them but what else was I going to do with 12 months worth of pictures? 
 
 ##To-do: 
-1. Finalise blog styling [ ]
+1. Finalise blog styling 
   * Mobile styles(!!)
-  * Set up grid(?)  [ ]
-  * Make sure to test accessibility [ ]
-2. Upload images [ ]
+  * Set up grid(?)  
+  * Make sure to test accessibility 
+2. Upload images 
