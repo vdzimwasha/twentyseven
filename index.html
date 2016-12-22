@@ -1,26 +1,26 @@
 ---
 layout: default
 images:
-  - image_path: /images/hello.jpg
-    title: Apple Pie
-  - image_path: /images/hello_2.jpg
-    title: WHy
-  - image_path: /images/hello_3.jpg
-    title: WHy
-  - image_path: /images/hello.jpg
-    title: Apple Pie
-  - image_path: /images/hello_2.jpg
-    title: WHy
-  - image_path: /images/hello_3.jpg
-    title: WHy
-  - image_path: /images/hello.jpg
-    title: Apple Pie
-  - image_path: /images/hello_2.jpg
-    title: WHy
-  - image_path: /images/hello_3.jpg
-    title: WHy
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
+  - image_path: images/placeholder-picture.jpg
+    title: This is a placeholder image
 ---
 
   {% for image in page.images %}
-        <article class="image col"><img src="{{ image.image_path }}" alt="{{ image.title}}"/></article>
+        <figure class="item col"><img src="{{ image.image_path }}" alt="{{ image.title}}"/><figcaption>{{image.caption}}</figcaption></figure>
   {% endfor %}
