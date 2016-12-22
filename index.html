@@ -1,7 +1,26 @@
 ---
 layout: default
+images:
+  - image_path: /images/hello.jpg
+    title: Apple Pie
+  - image_path: /images/hello_2.jpg
+    title: WHy
+  - image_path: /images/hello_3.jpg
+    title: WHy
+  - image_path: /images/hello.jpg
+    title: Apple Pie
+  - image_path: /images/hello_2.jpg
+    title: WHy
+  - image_path: /images/hello_3.jpg
+    title: WHy
+  - image_path: /images/hello.jpg
+    title: Apple Pie
+  - image_path: /images/hello_2.jpg
+    title: WHy
+  - image_path: /images/hello_3.jpg
+    title: WHy
 ---
 
-  {% for post in site.posts %}
-      {{ post.content }}
+  {% for image in page.images %}
+        <article class="image col"><img src="{{ image.image_path }}" alt="{{ image.title}}"/></article>
   {% endfor %}

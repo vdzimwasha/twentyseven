@@ -1,15 +1,14 @@
-  <header class="site-header">
-  <h1 class="site-title"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
-    <div>
-      <div class="intro-overlay">
-        <div class="intro-content">
-          <p class="intro-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolores, officia corporis nobis laboriosam numquam excepturi iste, suscipit dolor fugiat repudiandae reiciendis, voluptatum ducimus quasi laudantium delectus, pariatur consectetur
-            ea. </p>
-          <p class="contact-details"><a href=https: "https:www.twitter.com/heyitsvim">Twitter</a> / <a href="">Instagram</a> / <a href="">Github</a></p>
-        </div>
-      </div>
-      <button class="nav nav-icon">
-        <span></span> <p hidden> Twenty seven exposures</p>
-</button>
-    </div>
-  </header>
+<header class="site-header">
+   <button aria-expanded="false" aria-label="open about me section" id="intro-toggle" class="nav nav-icon">
+      <span></span> 
+      <span class="intro-state">Open About Me Section</span>
+   </button>
+   <h1 class="site-title"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+</header>
+<div class="intro-overlay"  aria-hidden="true" aria-labelledby="intro-toggle">
+   <div class="intro-content">
+      <p class="intro-copy">27 Exposures is the online archive of a project I undertook between April 16th 2016 - April 16th 2017 wherein I used one single use camera every month with the hope of documenting the year before I turned 25.
+      </p>
+      <p class="contact-details"><a href=https: "https:www.twitter.com/heyitsvim">Twitter</a> / <a href="https:www.instagram.com/viiiimbai">Instagram</a> / <a href="https:www.github.com/vdzimwasha">Github</a></p>
+   </div>
+</div>
