@@ -99,10 +99,7 @@ body {
   background-color: $mistyrose;
   padding: 15px 15px;
   display: inline-block;
-  outline: none;
-  &:focus {
-    outline: solid $black;
-  }
+  outline: none; 
 }
 
 .nav-icon span,
@@ -147,10 +144,6 @@ body {
         transform: rotate(-145deg);
         top: 0;
       }
-    }
-    &:hover,
-    &:focus {
-      outline: solid;
     }
   }
 }
