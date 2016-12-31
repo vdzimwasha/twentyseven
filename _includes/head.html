@@ -2,13 +2,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
 	<script src="js/app.js"></script>
+ 	<!-- Open graph tags --> 
+ 	<meta property="og:title" content="27 Exposures" />
+	<meta property="og:type" content="blog" />
+	<meta property="og:url" content="http://vdzimwasha.github.io/twentyseven" />
+	<meta property="og:image" content="images/placeholder-picture.jpg" />
+	<!-- Search engine -->
+	<meta name="description" content="Photoblog showcasing photographs taken every month with a single use camera between April 2016 - April 2017.">
+	<meta name="abstract" content="Single use camera photoblog by V. Dzimwasha">
+	<meta name="keywords" content="single use camera, film, 35mm film, photography, london">
+	<meta name="revisit-after" content="30 days">
+	<meta name="rating" content="General">
 </head> 
